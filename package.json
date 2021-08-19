@@ -1,0 +1,37 @@
+{
+  "name": "parkington",
+  "version": "1.0.0",
+  "description": "base authentication and authorization",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "debub": "ndb server.js"
+  },
+  "keywords": [],
+  "author": "Raphael Okafor Jr",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
+    "google-auth-library": "^7.3.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "stripe": "^8.163.0",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1"
+  }
+}
